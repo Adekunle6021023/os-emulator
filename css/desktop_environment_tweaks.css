@@ -1,0 +1,44 @@
+/*LEFT SIDEBAR*/
+
+.show-sidebar {
+    display: grid;
+    animation: showSidebar 1000ms forwards;
+}
+
+
+@keyframes showSidebar {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    100% {
+        opacity: 1;
+        width: 250px;
+    }
+}
+
+/**REDUCE FEATURED AREA OPACITY */
+
+.reduce-opacity {
+    opacity: 0.2;
+    transition: 1s opacity;
+}
+
+
+/*REMOVE SIDEBAR AFTER CLICKING ON OPTION*/
+
+.remove-sidebar {
+    display: none;
+}
+
+
+
+/*TASKBAR*/
+
+.binary-state-change {
+    filter: invert(100%);
+    transform: scale(1.1, 1.1);
+    transition: filter 1000ms;
+    transition: transform 1000ms;
+}

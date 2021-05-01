@@ -1,0 +1,9 @@
+<div class="app-container">
+    <div class="app-error">
+        <div class="error-img">
+            <img src="../svg/sad-tear.svg" alt="error-img">
+        </div>
+        <p class="error-message">Apps Not Found</p>
+    </div>
+</div>
+

@@ -1,0 +1,18 @@
+<div class="status">Status: online</div>
+                        <div class="user">
+                            <div class="user-img "></div>
+                            <div class="user-info">
+                                <div class="user-name">
+                                    <div>Name:</div>
+                                    <div class="name">John Doe</div>
+                                </div>
+                                <div class="user-email">
+                                    <div>Email:</div>
+                                    <div class="email">live677839os@liveos.os</div>
+                                </div>
+                                <div class="user-id">
+                                    <div>USER ID:</div>
+                                    <div class="id">LIVE677839OS</div>
+                                </div>
+                            </div>
+                        </div>

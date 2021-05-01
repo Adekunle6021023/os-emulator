@@ -1,0 +1,6 @@
+<div class="search">
+    <div class="search-container">
+        <input type="search" class="search-box">
+        <div class="search-button"></div>
+    </div>
+</div>

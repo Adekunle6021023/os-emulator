@@ -1,0 +1,14 @@
+<div class="modal">
+        <h1>Oops...</h1>
+        <h2>Your device is not compatible with this application</h2>
+        <p>To fix this issue, please switch to a device with a larger screen width.</p>
+        <div>
+            <button class="previous-page">
+                <span class="btn-icon"></span>
+                Back to Portfolio Page
+            </button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Adekunle Adedokun © 2021</p>
+    </footer>

@@ -1,0 +1,237 @@
+.parent-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    background-color: #000000;
+    z-index: 1000;
+    color: white;
+    box-shadow: 10px 10px 10px 10px black;
+    opacity: 1
+}
+
+.modal-animate {
+    animation: modalAnimate 1s forwards;
+}
+
+@keyframes modalAnimate {
+    0% {
+        width: 0vw;
+        height: 0vh;
+    }
+
+    100% {
+        width: 75vw;
+        height: 75vh;
+    }
+}
+
+.modal-info {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0.875rem;
+}
+
+.modal-icon {
+    background-image: url('../svg/user.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    filter: invert(90%);
+    padding: 0.5rem;
+    margin-right: 0.25rem;
+}
+
+.close-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.125rem 0.875rem;
+    font-size: 2rem;
+    font-weight: 100;
+    cursor: default;
+    width: 100%;
+}
+
+.main-modal {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    top: 0;
+}
+
+/***********
+***********
+************* MY ACCOUNT SECTION
+***********
+***********
+*************/
+
+.status {
+    color: #ffffff;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0.125rem 0.875rem;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 2rem;
+    overflow: auto;
+}
+
+.user-img {
+    width: calc((65vh) - (0.1 * 65vh));
+    height: calc((65vh) - (0.1 * 65vh));
+    background-image: url(../img/img0.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: transparent;
+    border-radius: 100%;
+    align-self: center;
+}
+
+.user-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: start;
+    align-items: center;
+}
+
+
+
+/*************
+**********
+**************MY APPS SECTION
+*************
+*********/
+
+.app-error {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-img {
+    width: calc(((65vh) - (0.1 * 65vh))/2);
+    height: calc(((65vh) - (0.1 * 65vh))/2);
+    background-image: url(../svg/sad-tear.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: invert(50%);
+}
+
+.error-message {
+    color: #7f7f7f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+/***********
+***********
+************* TRASH SECTION AND SHARED SPACES SECTION
+***********
+***********
+*************/
+
+
+.message-container {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    color: #7f7f7f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.message-img {
+    width: calc(((65vh) - (0.1 * 65vh))/2);
+    height: calc(((65vh) - (0.1 * 65vh))/2);
+    background-image: url(../svg/recycle-bin.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: invert(50%);
+}
+
+.shared-spaces-message-img {
+    width: calc(((65vh) - (0.1 * 65vh))/2);
+    height: calc(((65vh) - (0.1 * 65vh))/2);
+    background-image: url(../svg/desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: invert(50%);
+}
+
+/***********
+***********
+************* SEARCH
+***********
+*************/
+
+
+.search {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box {
+    height: 35%;
+    width: 75%;
+    color: white;
+    background-color: #000000;
+    border-color: #7f7f7f;
+    padding: 0.125rem 0.875rem;
+    outline: none;
+}
+
+.search-box:focus {
+    border-color: white;
+}
+
+.search-button {
+    width: 25px;
+    height: 35%;
+    background-image: url('../svg/search.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0.50rem;
+    filter: invert(100%);
+    margin-left: 0.75rem;
+}
+
+.search-button:hover {
+    border: #ffffff solid 1px;
+}

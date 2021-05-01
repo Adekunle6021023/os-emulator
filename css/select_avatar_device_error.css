@@ -1,0 +1,55 @@
+* {
+    padding: 0.25rem;
+    color: #ffffff;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+button {
+    background: transparent;
+    outline: none;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid #ffffff;
+}
+
+button:hover {
+    border: 3px solid #ffffff;
+}
+
+.modal {
+    padding: 0.5rem;
+}
+
+.modal div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('../svg/arrow-left.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: invert(100%);
+    margin: 0 0.35rem;
+}
+
+.footer {
+    position: absolute;
+    top: 93%;
+    left: 100;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    padding: 0 0.75rem;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

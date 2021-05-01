@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Avatar | Windows 8.1 Emulator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/select_avatar_main.css">
+    <link rel="stylesheet" href="css/select_avatar_login.css">
+    <link rel="stylesheet" href="css/select_avatar_device_error.css">
+
+    <script>
+        if (window.innerWidth < 1024) {
+            (async function getText() {
+                const getData = await fetch('./txt/index_error_modal.txt');
+                const receive = await getData.text();
+                document.querySelector('body').innerHTML = receive;
+            })()
+        }
+    </script>
+</head>
+
+<body>
+    <div class="select_avatar-container">
+        <header class="header">
+            <p>Select your avatar</p>
+        </header>
+        <div class="select-avatar">
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <div class="header">
+            <p>Login</p>
+        </div>
+        <div class="form-container">
+            <div class="user-avatar"></div>
+            <div class="form-wrapper">
+                <form class="form">
+                    <p>User</p>
+                    <label for="passcode">Passcode</label>
+                    <input type="password" placeholder="Passcode" id="passcode" autocomplete="new-password">
+                    <button type="button" class="btn">Login</button>
+                    <div>Your passcode for this session is: <span class="session-passcode"></span></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Adekunle Adedokun © 2021</p>
+    </footer>
+    <script src="js/select_avatar_main.js"></script>
+    <script src="js/select_avatar_login.js"></script>
+</body>
+
+
+</html>

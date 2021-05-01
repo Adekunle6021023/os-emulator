@@ -1,0 +1,6 @@
+<div class="trash-container">
+    <div class="message-container">
+        <div class="message-img"></div>
+        <p class="message">Nothing to be found in the trash...yet</p>
+    </div>
+</div>

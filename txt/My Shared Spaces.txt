@@ -1,0 +1,6 @@
+<div class="shared-spaces-container">
+    <div class="message-container">
+        <div class="shared-spaces-message-img"></div>
+        <p class="message">No devices connected</p>
+    </div>
+</div>
