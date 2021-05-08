@@ -47,13 +47,19 @@ let taskbarSVG = [
         icon.style.backgroundImage = `url('./svg/${taskbarSVG[taskbarIconArray.indexOf(icon)]}.svg')`
     });
 
-    //LOAD DATE AND TIME
 
+
+
+})();
+
+//LOAD DATE AND TIME
+
+
+
+setInterval(() => {
     let dateWrap = document.querySelector('.date');
 
     let date = new Date().toLocaleString();
 
     dateWrap.textContent = `${date}`;
-
-
-})();
+}, 1000);
